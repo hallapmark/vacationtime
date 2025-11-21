@@ -17,6 +17,7 @@ export default defineConfig([
         sourceType: 'module',
       },
     },
+
     plugins: {
       react: reactPlugin,
       'react-hooks': reactHooksPlugin,
@@ -35,6 +36,7 @@ export default defineConfig([
       // Tailwind rules
       'better-tailwindcss/no-unregistered-classes': 'error',
       'better-tailwindcss/no-conflicting-classes': 'warn',
+      'better-tailwindcss/classnames-order': 'off'
     },
     settings: {
       react: { version: 'detect' },
