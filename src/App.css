@@ -1,7 +1,7 @@
 @import "tailwindcss/index.css";
 @import "./theme.css";
 
-/* Quick mapping of project token classnames -> CSS variables
+/* <Mapping of project token classnames -> CSS variables
 	This ensures the color utilities work even if Tailwind's
 	generated color classes aren't produced by the build. */
 .bg-background{background-color:hsl(var(--background))}
