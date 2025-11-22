@@ -1,1 +1,23 @@
-@import "tailwindcss";
+@import "tailwindcss/index.css";
+@import "./theme.css";
+
+/* Quick mapping of project token classnames -> CSS variables
+	This ensures the color utilities work even if Tailwind's
+	generated color classes aren't produced by the build. */
+.bg-background{background-color:hsl(var(--background))}
+.text-foreground{color:hsl(var(--foreground))}
+.bg-primary{background-color:hsl(var(--primary))}
+.text-primary-foreground{color:hsl(var(--primary-foreground))}
+.bg-secondary{background-color:hsl(var(--secondary))}
+.text-secondary-foreground{color:hsl(var(--secondary-foreground))}
+.bg-accent{background-color:hsl(var(--accent))}
+.text-accent-foreground{color:hsl(var(--accent-foreground))}
+.bg-muted{background-color:hsl(var(--muted))}
+.text-muted-foreground{color:hsl(var(--muted-foreground))}
+.text-primary{color:hsl(var(--primary))}
+.text-secondary{color:hsl(var(--secondary))}
+.text-accent{color:hsl(var(--accent))}
+.text-muted{color:hsl(var(--muted))}
+
+/* Project base styles (moved from src/index.css) */
+body{font-family:system-ui,sans-serif}

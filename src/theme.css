@@ -1,0 +1,39 @@
+:root {
+  /* shadcn HSL fragments */
+  /* "Modern Travel Blue" – colors from ai */
+  --primary: 222 100% 56%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 218 100% 95%;
+  --secondary-foreground: 215 32% 20%;
+  --accent: 36 100% 65%;
+  --accent-foreground: 0 0% 15%;
+  --muted: 210 20% 96%;
+  --muted-foreground: 215 15% 40%;
+  --background: 0 0% 100%;
+  --foreground: 224 71% 4%;
+
+  /* Vscode preview-friendly versions */
+  --primary-color: hsl(222, 100%, 56%);
+  --primary-foreground-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(218, 100%, 95%);
+  --secondary-foreground-color: hsl(215, 32%, 20%);
+  --accent-color: hsl(36, 100%, 65%);
+  --accent-foreground-color: hsl(0, 0%, 15%);
+}
+
+/* Dark mode via prefers-color-scheme */
+/* TODO: Maaybe add manual dark mode toggle? */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --primary: 222 100% 62%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 218 40% 18%;
+    --secondary-foreground: 218 100% 97%;
+    --accent: 36 100% 60%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 210 20% 20%;
+    --muted-foreground: 215 15% 80%;
+    --background: 224 71% 4%;
+    --foreground: 0 0% 100%;
+  }
+} */

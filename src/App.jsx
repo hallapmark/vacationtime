@@ -1,19 +1,39 @@
-import './App.css';
+import React from 'react';
 
 function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-linear-to-r from-blue-500 to-purple-600 text-white">
-      <h1 className="mb-4 font-bold drop-shadow-lg">VacationTime Test</h1>
+    <div className="bg-background text-foreground min-h-screen space-y-8 p-8">
+      <h1 className="text-3xl font-bold">VacationTime Theme Showcase</h1>
 
-      <p className="text-lg italic underline decoration-yellow-300">
-        Tailwind should be working, test test
-      </p>
-      <div className="bg-amber-400">Test</div>
-
-      <button className="mt-6 rounded-lg bg-yellow-400 px-6 py-3 font-semibold text-black shadow-lg transition-transform hover:scale-105 hover:bg-yellow-300">
-        Testy Button
+      {/* Primary Button */}
+      <button className="bg-primary text-primary-foreground rounded-md px-4 py-2">
+        Primary Buttonnn
       </button>
-      <buttoN></buttoN>
+
+      {/* Secondary Button */}
+      <button className="bg-secondary text-secondary-foreground rounded-md px-4 py-2">
+        Secondary Button
+      </button>
+
+      {/* Accent Button */}
+      <button className="bg-accent text-accent-foreground rounded-md px-4 py-2">
+        Accent Button
+      </button>
+
+      {/* Card */}
+      <div className="bg-muted text-muted-foreground rounded-lg p-6 shadow-md">
+        <h2 className="mb-2 text-xl font-semibold">Card Title</h2>
+        <p>This is a muted card to demonstrate background and foreground contrast.</p>
+      </div>
+
+      {/* Inline Text */}
+      <p>
+        Background: <span className="bg-background rounded px-2 py-1">background</span> |
+        Foreground: <span className="text-foreground">foreground</span> | Primary:{' '}
+        <span className="text-primary">primary</span> | Secondary:{' '}
+        <span className="text-secondary">secondary</span> | Accent:{' '}
+        <span className="text-accent">accent</span>
+      </p>
     </div>
   );
 }
